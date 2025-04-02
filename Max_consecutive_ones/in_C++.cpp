@@ -4,7 +4,7 @@ int findMaxConsecutiveOnes(vector<int>& nums) {
     int Max = 0; // This variable keeps track of the current count of consecutive 1s
     int maxco = 0; // This variable keeps track of the maximum count of consecutive 1s found so far
     
-    // Loop through each element in the given vector (array) 'nums'
+    //Loop through each element in the given vector (array) 'nums'
     for(int i = 0; i < nums.size(); i++){
         if(nums[i] == 1){ // If the current element is 1
             Max += 1; // Increase the current consecutive count
