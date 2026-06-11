@@ -1,9 +1,26 @@
 class Solution(object):
+
     def sortArrayByParity(self, nums):
-        odd , even = [] , []
+
+        # Stores odd numbers
+        odd = []
+
+        # Stores even numbers
+        even = []
+
+        # Traverse array
         for i in nums:
-            if i % 2 ==0:
+
+            # If number is even
+            if i % 2 == 0:
+
+                # Add to even list
                 even.append(i)
+
             else:
+
+                # Add to odd list
                 odd.append(i)
-        return  even + odd      
+
+        # Return evens followed by odds
+        return even + odd
